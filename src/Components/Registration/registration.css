@@ -1,0 +1,135 @@
+.register h1 {
+  color: var(--yellow-theme-color);
+}
+
+.register p {
+  color: #fff;
+}
+.registerForm {
+  background-color: black;
+  border: 1px solid var(--yellow-theme-color);
+  box-shadow: 8px 8px 0 0 var(--yellow-theme-color);
+  border-radius: 25px;
+  padding: 50px 100px;
+  margin-top: 20vh;
+  width: 50%;
+}
+
+.registerForm label {
+  color: var(--yellow-theme-color);
+}
+.registerForm input {
+  border-radius: 25px;
+}
+.registerForm .reg-button {
+  border-radius: 25px;
+  background-color: var(--yellow-theme-color);
+  color: #000;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.registerForm .log {
+  margin-top: 20px;
+}
+
+.registerForm .logLink {
+  color: var(--yellow-theme-color);
+  border: 1px solid var(--yellow-theme-color);
+  padding: 5px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .registerForm {
+    padding: 20px 40px;
+    margin-top: 15vh;
+    width: 70%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .registerForm {
+    padding: 20px 40px;
+    margin-top: 20vh;
+    margin-bottom: 7vh;
+    width: 70%;
+  }
+
+  .registerformText h1 {
+    font-size: 2rem;
+  }
+
+  .registerForm input {
+    height: 30px;
+    padding: 4px 15px;
+  }
+
+  .registerForm .reg-button {
+    padding: 0px 10px;
+  }
+
+  .registerForm .logLink {
+    padding: 0px;
+    margin-left: 20px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .registerForm {
+    padding: 20px 20px;
+    margin-top: 25vh;
+    width: 70%;
+  }
+
+  .registerformText h1 {
+    font-size: 1.5rem;
+  }
+
+  .registerForm input {
+    height: 25px;
+    padding: 4px 15px;
+  }
+
+  .registerForm .reg-button {
+    padding: 0px 10px;
+  }
+
+  .registerForm .logLink {
+    padding: 0px;
+    margin-left: 20px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .registerForm {
+    padding: 20px 20px;
+    margin-top: 15vh;
+    width: 90%;
+  }
+
+  .registerformText h1 {
+    font-size: 1.5rem;
+  }
+
+  .registerForm input {
+    height: 25px;
+    padding: 4px 15px;
+  }
+
+  .registerForm .reg-button {
+    padding: 0px 10px;
+  }
+
+  .registerForm .logLink {
+    padding: 0px;
+    margin-left: 20px;
+  }
+}

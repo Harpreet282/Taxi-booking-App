@@ -1,0 +1,109 @@
+.booking h1 {
+  color: var(--yellow-theme-color);
+}
+
+.booking p {
+  color: #fff;
+}
+.bookingForm {
+  background-color: black;
+  border: 1px solid var(--yellow-theme-color);
+  box-shadow: 8px 8px 0 0 var(--yellow-theme-color);
+  border-radius: 25px;
+  padding: 50px 100px;
+  margin-top: 20vh;
+  width: 50%;
+}
+
+.bookingForm label {
+  color: var(--yellow-theme-color);
+}
+.bookingForm input {
+  border-radius: 25px;
+}
+.bookingForm .booking-button {
+  border-radius: 25px;
+  background-color: var(--yellow-theme-color);
+  color: #000;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .bookingForm {
+    padding: 20px 40px;
+    margin-top: 15vh;
+    width: 70%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .bookingForm {
+    padding: 20px 40px;
+    margin-top: 20vh;
+    margin-bottom: 7vh;
+    width: 70%;
+  }
+
+  .bookingFormText h1 {
+    font-size: 2rem;
+  }
+
+  .bookingForm input {
+    height: 30px;
+    padding: 4px 15px;
+  }
+
+  .bookingForm .booking-button {
+    padding: 0px 10px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .bookingForm {
+    padding: 20px 20px;
+    margin-top: 25vh;
+    width: 70%;
+  }
+
+  .bookingFormText h1 {
+    font-size: 1.5rem;
+  }
+
+  .bookingForm input {
+    height: 25px;
+    padding: 4px 15px;
+  }
+
+  .bookingForm .booking-button {
+    padding: 0px 10px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .bookingForm {
+    padding: 20px 20px;
+    margin-top: 15vh;
+    width: 90%;
+  }
+
+  .bookingFormText h1 {
+    font-size: 1.5rem;
+  }
+
+  .bookingForm input {
+    height: 25px;
+    padding: 4px 15px;
+  }
+
+  .bookingForm .booking-button {
+    padding: 0px 10px;
+  }
+}

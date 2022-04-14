@@ -1,0 +1,270 @@
+html {
+  scroll-behavior: smooth;
+}
+/* about section */
+.about {
+  background-image: url(https://cdn.wallpapersafari.com/19/53/4betzr.jpg);
+  min-height: 88vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.aboutText h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 950;
+  font-size: 4rem;
+}
+.aboutText p {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/* Experience section */
+
+/* .experience{
+    min-height: 83vh;
+} */
+.experienceText p {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: justify;
+  color: #313131;
+}
+
+.experienceText h1 {
+  font-weight: 950;
+  font-size: 3rem;
+}
+
+.expColumn button {
+  background-color: #000;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.expColumn button:hover {
+  background-color: var(--yellow-theme-color);
+  color: #000;
+}
+.expColumn button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.experienceImage {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.experienceImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* offers section */
+
+.offers {
+  background-color: hsl(0, 6%, 87%);
+  padding: 20px;
+}
+.offersText {
+  text-align: center;
+}
+.offersText p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.offersText h1 {
+  font-weight: 950;
+  font-size: 3rem;
+}
+
+.cardClass {
+  text-align: center;
+  width: 25rem;
+  margin: 10px auto;
+  object-fit: cover;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+.cardClass h5 {
+  font-weight: 950;
+  font-size: 2rem;
+}
+.cardClass img {
+  border-radius: 25px;
+  padding: 15px;
+}
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .aboutText h1 {
+    font-weight: 950;
+    font-size: 2rem;
+  }
+
+  .aboutText p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .experienceText p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #313131;
+  }
+
+  .experienceText h1 {
+    font-weight: 950;
+    font-size: 2.5rem;
+  }
+
+  .expColumn button {
+    background-color: #000;
+    border-radius: 40px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .cardClass {
+    width: 18rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .aboutText h1 {
+    font-weight: 950;
+    font-size: 2rem;
+  }
+
+  .aboutText p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .experienceText p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    color: #313131;
+  }
+
+  .experienceText h1 {
+    font-weight: 950;
+    font-size: 2rem;
+  }
+
+  .expColumn button {
+    background-color: #000;
+    border-radius: 40px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .cardClass {
+    width: 15rem;
+  }
+
+  .cardClass h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .aboutText h1 {
+    font-weight: 950;
+    font-size: 1rem;
+  }
+
+  .aboutText p {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+
+  .experienceText p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    color: #313131;
+  }
+
+  .experienceText h1 {
+    font-weight: 950;
+    font-size: 2rem;
+  }
+
+  .expColumn button {
+    background-color: #000;
+    border-radius: 40px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .cardClass {
+    width: 25rem;
+  }
+  .cardClass img {
+    height: 10rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .aboutText h1 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .aboutText p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .experienceText p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    color: #313131;
+  }
+
+  .experienceText h1 {
+    font-weight: 950;
+    font-size: 2rem;
+  }
+
+  .expColumn button {
+    background-color: #000;
+    border-radius: 40px;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .offersText h1 {
+    font-size: 2rem;
+  }
+
+  .cardClass {
+    width: 15rem;
+  }
+}

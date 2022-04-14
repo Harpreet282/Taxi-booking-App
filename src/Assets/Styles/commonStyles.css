@@ -1,0 +1,14 @@
+.PageBody {
+  margin-top: 12vh;
+}
+.absolute-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

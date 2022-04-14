@@ -1,0 +1,44 @@
+.footer {
+  min-height: 6vh;
+  background-color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  padding: auto;
+}
+
+.footer a {
+  cursor: pointer;
+  color: var(--yellow-theme-color);
+  font-size: 30px;
+}
+.footer a:hover {
+  color: white;
+}
+.tooltip {
+  color: var(--yellow-theme-color);
+}
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .footer a {
+    font-size: 20px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer a {
+    font-size: 20px;
+  }
+}
