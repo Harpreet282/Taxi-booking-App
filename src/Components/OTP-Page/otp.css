@@ -1,0 +1,114 @@
+.otpForm{
+    background-color: black;
+  border: 1px solid var(--yellow-theme-color);
+  box-shadow: 8px 8px 0 0 var(--yellow-theme-color);
+  border-radius: 25px;
+  padding: 50px 100px;
+  margin-top: 20vh;
+  width: 50%;
+}
+.otpForm h1 {
+    color: var(--yellow-theme-color);
+  }
+  
+  .otpForm p {
+    color: #fff;
+  }
+  .otpForm label {
+    color: var(--yellow-theme-color);
+  }
+  .otpForm input {
+    border-radius: 25px;
+  }
+  .otpForm .otp-button {
+    border-radius: 25px;
+    background-color: var(--yellow-theme-color);
+    color: #000;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  /* responsive */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .otpForm {
+      padding: 20px 40px;
+      margin-top: 15vh;
+      width: 70%;
+    }
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+    .otpForm {
+      padding: 20px 40px;
+      margin-top: 20vh;
+      margin-bottom: 7vh;
+      width: 70%;
+    }
+  
+    .otpFormText h1 {
+      font-size: 2rem;
+    }
+  
+    .otpForm input {
+      height: 30px;
+      padding: 4px 15px;
+    }
+  
+    .otpForm .otp-button {
+      padding: 0px 10px;
+    }
+  
+  
+  }
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    .otpForm {
+      padding: 20px 20px;
+      margin-top: 25vh;
+      width: 70%;
+    }
+  
+    .otpFormText h1 {
+      font-size: 1.5rem;
+    }
+  
+    .otpForm input {
+      height: 25px;
+      padding: 4px 15px;
+    }
+  
+    .otpForm .otp-button {
+      padding: 0px 10px;
+    }
+  
+    
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .otpForm {
+      padding: 20px 20px;
+      margin-top: 15vh;
+      width: 90%;
+    }
+  
+    .optFormText h1 {
+      font-size: 1.5rem;
+    }
+  
+    .otpForm input {
+      height: 25px;
+      padding: 4px 15px;
+    }
+  
+    .otpForm .reg-button {
+      padding: 0px 10px;
+    }
+  
+  }
+  

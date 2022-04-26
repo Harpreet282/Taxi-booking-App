@@ -1,0 +1,16 @@
+.profile{
+    margin-top: 20vh;
+}
+.profile .image{
+height: 250px;
+width: 250px;
+overflow: hidden;
+border-radius: 50%;
+border: 2px solid #000;
+}
+.profile .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    
+}

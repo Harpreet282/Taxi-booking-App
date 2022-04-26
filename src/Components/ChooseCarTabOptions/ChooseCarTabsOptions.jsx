@@ -29,20 +29,16 @@ const ChooseCarTabsOptions = ({ activeTab, setActiveTab }) => {
                 className={`tab-item absolute-center cur-po ${
                   activeTab === tab.name && "active-tab"
                 }`}
+                style={{
+                  color: `${activeTab === tab.name ? "#FFCC00" : "#fff"}`,
+                  cursor: "pointer",
+                }}
                 key={tab.id}
               >
-                <div
-                  className="tab-image-container absolute-center"
-                  style={{
-                    color: `${activeTab === tab.name ? "#FFCC00" : "#fff"}`,
-                    cursor: "pointer",
-                  }}
-                >
                   <div className="tab-name">
                     <FaTaxi /> {tab.name}
                   </div>
                 </div>
-              </div>
             );
           })}
         </div>

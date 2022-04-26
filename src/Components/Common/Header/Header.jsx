@@ -2,8 +2,8 @@ import React from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaGlobe, FaUserAlt, FaTaxi } from "react-icons/fa";
-
 const Header = () => {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg headerComponent px-5 fixed-top">
@@ -38,16 +38,35 @@ const Header = () => {
                 <FaGlobe /> About
               </NavLink>
             </li>
+           
+            { localStorage.getItem("Login Token") === null ?
             <li>
+              <NavLink to="login" className="nav-link listItems">
+                <FaUserAlt /> Login
+              </NavLink>  </li>
+              :
+              <>
+              <li>
               <NavLink to="/booking" className="nav-link listItems">
                 <FaTaxi /> Booking
               </NavLink>
             </li>
             <li>
-              <NavLink to="login" className="nav-link listItems">
-                <FaUserAlt /> Login
+            <NavLink to="/profile" className="nav-link listItems">
+                <FaUserAlt /> Profile
               </NavLink>
             </li>
+            {/* <li>
+            <NavLink to="/logout" className="nav-link listItems">
+                <FaUserAlt /> Logout
+              </NavLink>
+            </li> */}
+            
+            </>
+
+}
+            
+          
           </ul>
         </div>
       </nav>

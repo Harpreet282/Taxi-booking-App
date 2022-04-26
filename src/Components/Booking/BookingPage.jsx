@@ -2,6 +2,7 @@ import React from "react";
 import "./bookingPage.css";
 
 const BookingPage = () => {
+  document.title=`Conexi Booking-Page`;
   return (
     <>
       <section className="booking PageBody ">

@@ -1,9 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 50%;
+  }
+}
 /* about section */
 .about {
-  background-image: url(https://cdn.wallpapersafari.com/19/53/4betzr.jpg);
+  background-image: url("../../Assets/Images/bgImage.jpg");
   min-height: 88vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +24,10 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation: example 5s 1;
 }
 .aboutText h1 {
   font-family: "Kanit", sans-serif;
@@ -26,7 +38,17 @@ html {
   font-weight: 500;
   font-size: 2rem;
 }
-
+.aboutText button {
+  background-color: var(--yellow-theme-color);
+  border-radius: 40px;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.aboutText button a{
+  color: #000;
+  text-decoration: none;
+}
 /* Experience section */
 
 /* .experience{
@@ -104,9 +126,24 @@ html {
   font-weight: 950;
   font-size: 2rem;
 }
-.cardClass img {
+.cardClass .cardImage{
+  overflow: hidden;
+  height: 50%;
+  margin: 15px;
   border-radius: 25px;
-  padding: 15px;
+}
+.cardClass .cardImage img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%; 
+  -ms-transform: scale(1.1); 
+  transform: scale(1.0); 
+  transition: all .3s ease-in 0s;
+}
+.cardClass .cardImage:hover img{
+  -ms-transform: scale(1.1); 
+-webkit-transform: scale(1.1); 
+transform: scale(1.1);
 }
 
 /* responsive */
@@ -120,6 +157,11 @@ html {
 
   .aboutText p {
     font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .aboutText button {
+    padding: 10px 30px;
     font-size: 1rem;
   }
 
@@ -156,6 +198,10 @@ html {
 
   .aboutText p {
     font-weight: 500;
+    font-size: 1rem;
+  }
+  .aboutText button {
+    padding: 10px 30px;
     font-size: 1rem;
   }
 
@@ -199,6 +245,10 @@ html {
     font-weight: 500;
     font-size: 0.5rem;
   }
+  .aboutText button {
+    padding: 6px 20px;
+    font-size: 0.5rem;
+  }
 
   .experienceText p {
     font-weight: 500;
@@ -240,6 +290,10 @@ html {
     font-size: 1rem;
   }
 
+  .aboutText button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
   .experienceText p {
     font-weight: 500;
     font-size: 1rem;

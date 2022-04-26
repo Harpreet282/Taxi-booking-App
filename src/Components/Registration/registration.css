@@ -20,6 +20,10 @@
 }
 .registerForm input {
   border-radius: 25px;
+  color: #fff;
+}
+.registerForm select {
+  border-radius: 25px;
 }
 .registerForm .reg-button {
   border-radius: 25px;
@@ -39,6 +43,7 @@
   padding: 5px;
   border-radius: 25px;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 /* responsive */
@@ -69,6 +74,10 @@
     height: 30px;
     padding: 4px 15px;
   }
+  .registerForm select {
+    height: 30px;
+    padding: 4px 15px;
+  }
 
   .registerForm .reg-button {
     padding: 0px 10px;
@@ -93,6 +102,10 @@
   }
 
   .registerForm input {
+    height: 25px;
+    padding: 4px 15px;
+  }
+  .registerForm select {
     height: 25px;
     padding: 4px 15px;
   }
@@ -121,7 +134,11 @@
 
   .registerForm input {
     height: 25px;
-    padding: 4px 15px;
+    padding: 0px 15px;
+  }
+  .registerForm select {
+    height: 25px;
+    padding: 0px 15px;
   }
 
   .registerForm .reg-button {
