@@ -8,7 +8,6 @@ import LoginPage from "./Components/Login/LoginPage";
 import RegistrationPage from "./Components/Registration/RegistrationPage";
 import BookingPage from "./Components/Booking/BookingPage";
 import ProfilePage from "./Components/Profile-Page/ProfilePage";
-import Logout from "./Components/Logout";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Route path="/register" element={<RegistrationPage />}></Route>
         <Route path="/booking" element={<BookingPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
-        <Route path="/logout" element={<Logout />}></Route>
       </Routes>
       <Footer />
     </>

@@ -56,11 +56,6 @@ const Header = () => {
                 <FaUserAlt /> Profile
               </NavLink>
             </li>
-            {/* <li>
-            <NavLink to="/logout" className="nav-link listItems">
-                <FaUserAlt /> Logout
-              </NavLink>
-            </li> */}
             
             </>
 
