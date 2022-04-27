@@ -1,48 +1,46 @@
-.profile{
-    margin-top: 20vh;
+.profile {
+  margin-top: 20vh;
 }
-.leftSide{
-    overflow: hidden;
+.leftSide {
+  overflow: hidden;
 }
-.rightSide{
-    overflow: hidden;
-    /* text-align: center; */
-
+.rightSide {
+  overflow: hidden;
+  /* text-align: center; */
 }
-.profile .image{
-height: 250px;
-width: 250px;
-overflow: hidden;
-border-radius: 50%;
-border: 2px solid #000;
+.profile .image {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #000;
 }
-.profile .image img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    
+.profile .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
-.logoutButton{
-    display: flex;
-    justify-content: center;
+.logoutButton {
+  display: flex;
+  justify-content: center;
 }
-.logoutButton button{
-    margin-top: 5vh;
-    border-radius: 25px;
-    color: #000;
-    background-color: var(--yellow-theme-color);
-    font-weight: 500;
-    border: 2px solid #000;
-    width: 50%;
+.logoutButton button {
+  margin-top: 5vh;
+  border-radius: 25px;
+  color: #000;
+  background-color: var(--yellow-theme-color);
+  font-weight: 500;
+  border: 2px solid #000;
+  width: 50%;
 }
-.rightSideProfile .keyPair{
-    font-weight: 900;
-    font-size: 2.5rem;
+.rightSideProfile .keyPair {
+  font-weight: 900;
+  font-size: 2.5rem;
 }
-.rightSideProfile .valuePair{
-    font-weight: 500;
-    text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
-    font-size: 2rem;
+.rightSideProfile .valuePair {
+  font-weight: 500;
+  text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
+  font-size: 2rem;
 }
 
 /* responsive */
@@ -60,64 +58,62 @@ border: 2px solid #000;
 /* @media (max-width: 575.98px) { ... } */
 
 /* large devices */
-@media (max-width: 1199.98px){
-
+@media (max-width: 1199.98px) {
 }
 
 /* Medium devices */
-@media (max-width: 991.98px){
-    
-    .leftSideProfile{
-        margin-top: 30px;
-    }
-    .rightSideProfile .keyPair{
-        font-weight: 900;
-        font-size: 2.5rem;
-    }
-    .rightSideProfile .valuePair{
-        font-weight: 500;
-        text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
-        font-size: 1.5rem;
-    }
+@media (max-width: 991.98px) {
+  .leftSideProfile {
+    margin-top: 30px;
+  }
+  .rightSideProfile .keyPair {
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+  .rightSideProfile .valuePair {
+    font-weight: 500;
+    text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
+    font-size: 1.5rem;
+  }
 }
 
 /* small devices */
-@media (max-width: 767.98px){
-    .leftSideProfile{
-        margin-top: 30px;
-    }
-    .profile .image{
-        height: 150px;
-        width: 150px;
-        }
-        
-        .rightSideProfile .keyPair{
-            font-weight: 900;
-            font-size: 1.5rem;
-        }
-        .rightSideProfile .valuePair{
-            font-weight: 500;
-            text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
-            font-size: 1rem;
-        }
+@media (max-width: 767.98px) {
+  .leftSideProfile {
+    margin-top: 30px;
+  }
+  .profile .image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .rightSideProfile .keyPair {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .rightSideProfile .valuePair {
+    font-weight: 500;
+    text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
+    font-size: 1rem;
+  }
 }
 
 /* Extra-small devices */
-@media (max-width: 575.98px){
-    .leftSideProfile{
-        margin-top: 0px;
-    }
-    .profile .image{
-        height: 120px;
-        width: 120px;
-        }
-        .rightSideProfile .keyPair{
-            font-weight: 900;
-            font-size: 1.5rem;
-        }
-        .rightSideProfile .valuePair{
-            font-weight: 500;
-            text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
-            font-size: 1rem;
-        }
+@media (max-width: 575.98px) {
+  .leftSideProfile {
+    margin-top: 0px;
+  }
+  .profile .image {
+    height: 120px;
+    width: 120px;
+  }
+  .rightSideProfile .keyPair {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .rightSideProfile .valuePair {
+    font-weight: 500;
+    text-shadow: 0 0 3px var(--yellow-theme-color), 0 0 5px #000;
+    font-size: 1rem;
+  }
 }

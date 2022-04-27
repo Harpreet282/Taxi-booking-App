@@ -1,16 +1,26 @@
-import React from 'react'
-// import { Navigate } from 'react-router-dom';
+import React,{useState} from 'react'
 import './profile.css'
 import LoginPage from '../Login/LoginPage';
+import { toast } from 'react-toastify';
 
-const ProfilePage = (props) => {
+const ProfilePage = () => {
+  const[isLogin,setIsLogin]=useState(localStorage.getItem('Login Token')===null)
     const handleLogout=()=>{
         localStorage.removeItem('Login Token');
+        setIsLogin(true)
+        toast("You logged out successfully!")
     }
+    // let token=localStorage.getItem('Login Token')
+    // if(token===null){
+    //   setIsLogin(false)
+    // }
+    // else if(!token===null){
+    //   setIsLogin(true)
+    // }
   return (
    <>
    {
-       props.login ?
+       !isLogin ?
         <div className='PageBody'>
 
       <div className='container profile'>

@@ -35,7 +35,8 @@ const submitHandle=e=>{
     else{
       toast.success("Login Successfully")
       localStorage.setItem("Login Token",response.data.token)
-      setIsLogin({login:true})
+      // setIsLogin({login:true})
+      setIsLogin({...isLogin,login:true})
     }
   }).catch((error)=>{
     console.log(error)
@@ -44,14 +45,11 @@ const submitHandle=e=>{
 }
 
 
-const token= localStorage.getItem('Login Token');
-    // console.log(token)
-    if(token===null){
-     isLogin.login=false
-    }
-    else{
-      isLogin.login=true
-    }
+// const token= localStorage.getItem('Login Token');
+//     // console.log(token)
+//     if(!token===null){
+//     setIsLogin({...isLogin,login:true})
+//     }
 
 const{email,password}=loginData
   return (
@@ -67,7 +65,7 @@ const{email,password}=loginData
           </div>
 
           <div className="form-group">
-            <label htmlFor="phoneNumber">Phone Number</label>
+            <label htmlFor="email">E-mail</label>
             <input type="email" className="form-control" id="email" name="email" value={email} onChange={handleChange} />
           </div>
           <div className="form-group">
@@ -89,7 +87,7 @@ const{email,password}=loginData
       </section>
       </>
       :
-    <ProfilePage login={isLogin.login}/> 
+    <ProfilePage /> 
 }
       
       <ToastContainer />
